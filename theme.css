@@ -1,0 +1,58 @@
+/* ===================================================================
+   Theme: Silicon + Copper
+
+   Canonical source of the design tokens shared by david-katz.dev and
+   its hi.david-katz.dev business card. Tokens only: no layout, no
+   components, no site-specific rules. Anything that describes a
+   particular page belongs in that site's own stylesheet.
+
+   Wafer-grey surfaces with a copper interconnect accent and a teal
+   secondary. Light is the default; dark swaps the underlying CSS vars
+   via prefers-color-scheme, with no JS toggle.
+
+   Color roles:
+       accent   (copper) - interactive: links, nav, hover, focus
+       accent-2 (teal)   - informational: hints, pills
+       ok       (green)  - success: copy-to-clipboard feedback
+
+   Type roles:
+       sans (Archivo Variable)        - display headings
+       mono (JetBrains Mono Variable) - labels, nav, data, metadata
+
+   Consumers are responsible for loading those two families; the theme
+   only names them, and both fall back to a system stack.
+
+   All fg/bg pairs meet WCAG AA (>= 4.5:1, most >= 6:1).
+   =================================================================== */
+
+@theme {
+    --color-bg: #e8eaed;
+    --color-bg-elev: #f3f4f6;
+    --color-bg-rail: #e0e2e6;
+    --color-fg: #1b2026;
+    --color-fg-dim: #3c454f;
+    --color-muted: #59636e;
+    --color-border: rgba(27, 32, 38, 0.3);
+    --color-divider: rgba(27, 32, 38, 0.14);
+    --color-accent: #96470a;
+    --color-accent-2: #0b5f6e;
+    --color-ok: #2c6a2e;
+    --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+    --font-sans: "Archivo Variable", system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #14161a;
+        --color-bg-elev: #1b1e24;
+        --color-bg-rail: #17191e;
+        --color-fg: #e3e7ec;
+        --color-fg-dim: #b3bcc6;
+        --color-muted: #8b96a2;
+        --color-border: rgba(227, 231, 236, 0.3);
+        --color-divider: rgba(227, 231, 236, 0.12);
+        --color-accent: #e08e4f;
+        --color-accent-2: #5fc4d6;
+        --color-ok: #84c77a;
+    }
+}

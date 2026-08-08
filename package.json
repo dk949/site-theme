@@ -1,0 +1,32 @@
+{
+  "name": "@dk949/site-theme",
+  "version": "1.0.0",
+  "description": "Silicon + Copper design tokens shared by david-katz.dev and its business card",
+  "license": "MIT",
+  "author": "dk949",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dk949/site-theme.git"
+  },
+  "homepage": "https://github.com/dk949/site-theme#readme",
+  "keywords": [
+    "css",
+    "tailwindcss",
+    "design-tokens",
+    "theme"
+  ],
+  "exports": {
+    ".": "./theme.css",
+    "./theme.css": "./theme.css"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "files": [
+    "theme.css"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
