@@ -1,7 +1,7 @@
 {
   "name": "@dk949/site-theme",
-  "version": "1.0.0",
-  "description": "Silicon + Copper design tokens shared by david-katz.dev and its business card",
+  "version": "1.1.0",
+  "description": "Silicon + Copper design tokens and favicon shared by david-katz.dev and its business card",
   "license": "MIT",
   "author": "dk949",
   "type": "module",
@@ -14,18 +14,36 @@
     "css",
     "tailwindcss",
     "design-tokens",
-    "theme"
+    "theme",
+    "vite-plugin"
   ],
   "exports": {
     ".": "./theme.css",
-    "./theme.css": "./theme.css"
+    "./theme.css": "./theme.css",
+    "./favicon.svg": "./favicon.svg",
+    "./vite": {
+      "types": "./vite.d.ts",
+      "default": "./vite.js"
+    },
+    "./package.json": "./package.json"
   },
   "sideEffects": [
     "*.css"
   ],
   "files": [
-    "theme.css"
+    "theme.css",
+    "favicon.svg",
+    "vite.js",
+    "vite.d.ts"
   ],
+  "peerDependencies": {
+    "vite": "^6.0.0 || ^7.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vite": {
+      "optional": true
+    }
+  },
   "publishConfig": {
     "access": "public"
   }
