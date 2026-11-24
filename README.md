@@ -19,7 +19,7 @@ npm install @dk949/site-theme
 Or straight from git, pinned to a tag:
 
 ```sh
-npm install github:dk949/site-theme#v1.1.0
+npm install github:dk949/site-theme#v1.2.0
 ```
 
 ## Use
@@ -56,11 +56,15 @@ them, and both fall back to a system stack.
 
 ## Favicon
 
-`favicon.svg` is a 32x32 rounded chip: `dk` in copper on the dark `--color-bg`,
-the same mark on both sites. The palette is baked in as literal hex rather than
-tokens, because a favicon renders in its own document and never sees the host
-page's custom properties. It is deliberately dark-only; the chip reads on light
-and dark browser chrome alike, so there is no `prefers-color-scheme` split.
+`favicon.svg` is the DK monogram from [dk949/logo](https://github.com/dk949/logo)
+(`exports/favicon/favicon.svg`), the same mark on both sites. It keeps that
+export's 32px grid-fitted path untouched, so stems and bars land on whole
+pixels, and only swaps its black/white fill for `--color-accent`: copper
+`#96470a` in light, `#e08e4f` in dark, via the same `prefers-color-scheme`
+split as the theme. The palette is baked in as literal hex rather than tokens,
+because a favicon renders in its own document and never sees the host page's
+custom properties. When the logo changes, re-copy the export and re-apply the
+two fills.
 
 Static-asset directories (Vite's `public/`, for one) cannot reach into
 `node_modules`, so the package ships the plugin that bridges the gap: it serves

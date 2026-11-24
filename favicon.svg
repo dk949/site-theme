@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-    <rect width="32" height="32" rx="6" fill="#14161a"/>
-    <text x="4" y="23" font-family="monospace" font-size="18" font-weight="700" fill="#e08e4f">dk</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><style>path{fill:#96470a}@media (prefers-color-scheme:dark){path{fill:#e08e4f}}</style><path d="M0 0 L0 4 L5.255 4 C7.042 4 8.447 4.485 9.468 5.455 C10.49 6.398 11 7.704 11 9.658 L11 22.562 C11 24.256 10.49 25.576 9.468 26.546 C8.447 27.516 7.042 28 5.255 28 L0 28 L0 32 L5.255 32 C7.269 32 9.014 31.591 10.489 30.773 C11.943 29.925 13.047 28.743 13.829 27.314 C14.61 25.967 15 24.391 15 22.562 L15 18 L19.534 18 L26.923 32 L32 32 L23.568 15.886 L31.592 0 L26.697 0 L19.624 14 L15 14 L15 9.658 C15 7.569 14.61 6.007 13.829 4.687 C13.047 3.258 11.943 2.091 10.489 1.273 C9.014 0.424 7.269 0 5.255 0 L0 0 Z M0 8 L0 24 L4 24 L4 8 L0 8 Z"/></svg>
