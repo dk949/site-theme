@@ -1,7 +1,7 @@
 {
   "name": "@dk949/site-theme",
-  "version": "1.2.0",
-  "description": "Silicon + Copper design tokens and favicon shared by david-katz.dev and its business card",
+  "version": "1.3.0",
+  "description": "Silicon + Copper design tokens and icons shared by david-katz.dev and its business card",
   "license": "MIT",
   "author": "dk949",
   "type": "module",
@@ -21,6 +21,7 @@
     ".": "./theme.css",
     "./theme.css": "./theme.css",
     "./favicon.svg": "./favicon.svg",
+    "./apple-touch-icon.png": "./apple-touch-icon.png",
     "./vite": {
       "types": "./vite.d.ts",
       "default": "./vite.js"
@@ -33,6 +34,7 @@
   "files": [
     "theme.css",
     "favicon.svg",
+    "apple-touch-icon.png",
     "vite.js",
     "vite.d.ts"
   ],
